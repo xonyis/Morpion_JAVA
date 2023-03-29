@@ -192,7 +192,7 @@ public class App extends Application {
           	try {
     			Class.forName("com.mysql.cj.jdbc.Driver");
     			Connection con=DriverManager.getConnection(
-    					"jdbc:mysql://localhost:3306/morpion","root","");
+    					"jdbc:mysql://localhost:8888/morpion","root","");
     			System.out.println("Connecter");
     			String sql ="INSERT INTO score(vainqueur)"+"VALUES('Match nul')";
     					PreparedStatement pStatement=null;
